@@ -182,7 +182,7 @@ nav a{
 /* Team */
 
 #ourTeam{
-	height: 768px;
+	height: 1047px; /* 210 + 3*(249 + 30) */
 	background-color: #DDDDDC;
 }
 
@@ -193,7 +193,7 @@ nav a{
 #ourTeam h2{
 	margin-left: 30px;
 	clear: both;
-	margin-bottom: 30px;
+	margin-bottom: 0;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
 	font-size: 40px;
@@ -204,6 +204,7 @@ nav a{
 	font-family: 'Roboto Slab', serif;
 	font-size: 30px;
 	margin-bottom: 15px;
+	text-transform: uppercase;
 }
 
 #ourTeam li{
@@ -212,31 +213,42 @@ nav a{
 	font-size: 18px;
 }
 
-.bioContent{
-	padding: 20px;
-}
-
-#stevePortrait{
-	float: left;
-	background-image: url(../images/steve.png);
-	margin-left: 30px;
+.portrait{
 	width: 360px;
 	height: 249px;
-
+	margin-top: 30px;
 }
 
-#steveBio{
+#ourTeamContent section:nth-child(even) .portrait{
+	float: left;
+	margin-left: 30px;
+}
+
+#ourTeamContent section:nth-child(odd) .portrait{
 	float: right;
-	background-color: #F05822;
 	margin-right: 30px;
+}
+
+#steve .portrait{
+	background-image: url(../images/steve.png);
+}
+
+#andrew .portrait{
+	background-image: url(../images/andrew.png);
+}
+
+#ben .portrait{
+	background-image: url(../images/ben.png);
+}
+
+.bio {
 	width: 525px;
 	height: 249px;
+	margin-top: 30px;
 }
 
-#steveStripe{
+#ourTeamContent section:nth-child(even) .bio{
 	float: right;
-	height: 249px;
-	width: 84px;
 	background: repeating-linear-gradient(
   		-45deg,
   		#F05822 1px,
@@ -244,42 +256,11 @@ nav a{
   		#CA4927 15px,
  		#CA4927 30px
 	);
-}
-
-#steveBio, #andrewBio h3,li{
-	color: white;
-}
-
-#andrewBio h3{
-	text-align: right;
-}
-
-#andrewBio li{
-	text-align: right;
-}
-
-#andrewBio{
-	margin-top: 30px;
-	float: left;
-	margin-left: 30px;
-	background-color: #404041;
-	width: 525px;
-	height: 249px;
-}
-
-#andrewPortrait{
-	margin-top: 30px;
-	float: right;
-	background-image: url(../images/andrew.png);
 	margin-right: 30px;
-	width: 360px;
-	height: 249px;
 }
 
-#andrewStripe{
+#ourTeamContent section:nth-child(odd) .bio{
 	float: left;
-	height: 249px;
-	width: 84px;
 	background: repeating-linear-gradient(
   		-45deg,
   		#404041 1px,
@@ -287,6 +268,24 @@ nav a{
   		#231F20 15px,
  		#231F20 30px
 	);
+	margin-left: 30px;
+}
+
+.bioContent{
+	color: white;
+	padding: 20px;
+	height: 209px;
+}
+
+#ourTeamContent section:nth-child(even) .bioContent{
+	background-color: #F05822;
+	margin-right: 84px;
+}
+
+#ourTeamContent section:nth-child(odd) .bioContent{
+	background-color: #404041;
+	margin-left: 84px;
+	text-align: right;
 }
 
 /* Contact */
