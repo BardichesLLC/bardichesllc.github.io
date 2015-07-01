@@ -16,7 +16,7 @@ header{
 	width: 100%;
 	z-index: 1;
 	background: repeating-linear-gradient(
-  		-50deg,
+  		-45deg,
   		#F05822 1px,
   		#F05822 15px,
   		#CA4927 15px,
@@ -171,7 +171,7 @@ nav a{
 #interlude{
 	height: 75px;
 	background: repeating-linear-gradient(
-  		-50deg,
+  		-45deg,
   		#F4F4F4 1px,
   		#F4F4F4 15px,
   		#DDDDDC 15px,
@@ -238,7 +238,7 @@ nav a{
 	height: 249px;
 	width: 84px;
 	background: repeating-linear-gradient(
-  		-50deg,
+  		-45deg,
   		#F05822 1px,
   		#F05822 15px,
   		#CA4927 15px,
