@@ -2,8 +2,9 @@ CACHE MANIFEST
 # 2015-07-01 v1
 
 /favicon.ico
-/reset.css
-/styles.css
+
+/css/reset.css
+/css/styles.css
 
 /images/BardichesLogo.png
 
